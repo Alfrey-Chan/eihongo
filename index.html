@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Vocabulary Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="sidebar-content">
+                <!-- Logo -->
+                <div class="sidebar-logo">
+                    <div class="logo-icon">🧠</div>
+                </div>
+                
+                <!-- Main Navigation -->
+                <div class="sidebar-nav">
+                    <a href="#" class="nav-item">
+                        <div class="nav-icon">🏠</div>
+                        <span class="nav-label">Home</span>
+                    </a>
+                    
+                    <a href="#" class="nav-item">
+                        <div class="nav-icon">📚</div>
+                        <span class="nav-label">Collections</span>
+                    </a>
+                    
+                    <a href="#" class="nav-item active">
+                        <div class="nav-icon">📝</div>
+                        <span class="nav-label">Quizzes</span>
+                    </a>
+                </div>
+                
+                <!-- Bottom Navigation -->
+                <div class="sidebar-bottom">
+                    <a href="#" class="nav-item">
+                        <div class="nav-icon">🌐</div>
+                        <span class="nav-label">Language</span>
+                    </a>
+                    
+                    <a href="#" class="nav-item">
+                        <div class="nav-icon">👤</div>
+                        <span class="nav-label">Profile</span>
+                    </a>
+                    
+                    <div class="upgrade-section">
+                        <div class="upgrade-counter">
+                            <div class="counter-icon">⚡</div>
+                            <span class="counter-number">12</span>
+                        </div>
+                        <button class="upgrade-btn">Upgrade</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Bottom Navigation (Mobile) -->
+        <nav class="bottom-nav">
+            <a href="#" class="bottom-nav-item">
+                <div class="bottom-nav-icon">🏠</div>
+            </a>
+            <a href="#" class="bottom-nav-item">
+                <div class="bottom-nav-icon">🖼️</div>
+            </a>
+            <a href="#" class="bottom-nav-item add-button">
+                <div class="bottom-nav-icon">+</div>
+            </a>
+            <a href="#" class="bottom-nav-item">
+                <div class="bottom-nav-icon">🔔</div>
+                <div class="notification-badge">1</div>
+            </a>
+            <a href="#" class="bottom-nav-item">
+                <div class="bottom-nav-icon profile-avatar">A</div>
+            </a>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+    <div class="container">
+        <!-- Header Section -->
+        <header class="quiz-header">
+            <div class="header-content">
+                <div class="title-section">
+                    <div class="book-icon">📚</div>
+                    <h1 class="quiz-title">Japanese Vocabulary and Expression Quiz</h1>
+                </div>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="theme-toggle">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <div class="progress-info">
+                        <span class="progress-text" id="progress-text">Question 1 of 5</span>
+                        <span class="progress-percentage" id="progress-percentage">20%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="quiz-content">
+            <!-- Question Section -->
+            <section class="question-section" id="question-section">
+                <!-- Vocabulary Focus -->
+                <div class="vocabulary-focus">
+                    <div class="focus-header">
+                        <span class="focus-icon">🎯</span>
+                        <h2>Vocabulary Focus</h2>
+                    </div>
+                    <div class="vocabulary-tags" id="vocabulary-tags">
+                        <span class="vocab-tag">迷惑</span>
+                        <span class="vocab-tag">救いようがない</span>
+                        <span class="vocab-tag">義理がない</span>
+                        <span class="vocab-tag">全く</span>
+                        <span class="vocab-tag">割と</span>
+                    </div>
+                </div>
+
+                <!-- Question Content -->
+                <div class="question-content">
+                    <div class="question-meta">
+                        <span class="question-type" id="question-type">Contextual Application</span>
+                        <span class="difficulty-badge" id="difficulty-badge">Elementary</span>
+                        <span class="question-number-large" id="question-number-large">1</span>
+                    </div>
+
+                    <div class="question-text" id="question-text">
+                        山田さんはバスの中で大きな声で電話をしていて、周りの人たちに＿＿＿をかけていました。
+                    </div>
+
+                    <div class="skills-tested" id="skills-tested">
+                        <span class="skill-icon">🎯</span>
+                        <span class="skill-tag">Vocabulary recognition</span>
+                        <span class="skill-tag">Contextual understanding</span>
+                        <span class="skill-tag">Nuance comprehension</span>
+                    </div>
+                </div>
+
+                <!-- Options -->
+                <div class="options-container" id="options-container">
+                    <button class="option-button" data-option="A">
+                        <span class="option-label">A</span>
+                        <span class="option-text">迷惑</span>
+                    </button>
+                    <button class="option-button" data-option="B">
+                        <span class="option-label">B</span>
+                        <span class="option-text">無理</span>
+                    </button>
+                    <button class="option-button" data-option="C">
+                        <span class="option-label">C</span>
+                        <span class="option-text">残念</span>
+                    </button>
+                    <button class="option-button" data-option="D">
+                        <span class="option-label">D</span>
+                        <span class="option-text">心配</span>
+                    </button>
+                </div>
+
+                <!-- Explanation Section -->
+                <div class="explanation-section" id="explanation-section" style="display: none;">
+                    <div class="explanation-header">
+                        <span class="explanation-icon">💡</span>
+                        <h3>Explanation</h3>
+                    </div>
+                    
+                    <div class="correct-answer-box">
+                        <h4>Correct Answer:</h4>
+                        <div class="correct-answer-text" id="correct-answer"></div>
+                    </div>
+
+                    <div class="option-explanations-section">
+                        <h4>Option Explanations:</h4>
+                        <div class="option-explanations" id="option-explanations"></div>
+                    </div>
+
+                    <div class="additional-info-box">
+                        <h4>Additional Information:</h4>
+                        <div class="additional-info" id="additional-info"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="results-section" style="display: none;">
+                <div class="results-header">
+                    <div class="trophy-icon">🏆</div>
+                    <h2>Quiz Completed!</h2>
+                    <div class="performance-status" id="performance-status">
+                        <span class="status-icon">🎯</span>
+                        <span class="status-text">Needs Improvement</span>
+                    </div>
+                </div>
+
+                <div class="score-cards">
+                    <div class="score-card correct-card">
+                        <div class="score-number" id="correct-count">2</div>
+                        <div class="score-label">Correct</div>
+                    </div>
+                    <div class="score-card incorrect-card">
+                        <div class="score-number" id="incorrect-count">3</div>
+                        <div class="score-label">Incorrect</div>
+                    </div>
+                    <div class="score-card percentage-card">
+                        <div class="score-number" id="final-percentage">40%</div>
+                        <div class="score-label">Score</div>
+                    </div>
+                </div>
+
+                <button class="take-again-btn" id="take-again-btn">
+                    <span class="refresh-icon">🔄</span>
+                    Take Quiz Again
+                </button>
+
+                <div class="question-review">
+                    <h3>Question Review</h3>
+                    <div class="review-list" id="review-list"></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Navigation -->
+        <footer class="quiz-footer">
+            <div class="nav-buttons">
+                <button class="nav-btn secondary" id="prev-button" disabled>Previous</button>
+                <button class="nav-btn secondary" id="show-explanation" style="display: none;">
+                    <span class="info-icon">ℹ️</span>
+                    Show Explanation
+                </button>
+                <button class="nav-btn primary" id="next-button">Next</button>
+            </div>
+        </footer>
+    </div>
+
+        </div>
+        </div>
+    </div>
+
+    <script src="quiz-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
